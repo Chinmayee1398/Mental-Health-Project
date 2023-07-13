@@ -44,6 +44,8 @@ These technologies and software tools collectively contributed to the successful
 - Babich, N. (2020, May 12). 5 Essential UX Rules for Dialog Design - UX Planet. Medium. https://uxplanet.org/5-essential-ux-rules-for-dialog-design-4de258c22116
 - What is Usability Engineering? (2017, June 21). The Interaction Design Foundation. https://www.interaction-design.org/literature/topics/usability-engineering
 - De Mendonça Lima, C. A. (2013, 1 September). Mental health and Wellbeing of Older people: Opportunities and challenges. PubMed Central (PMC). https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3822658/
+- Google Material Icons – Material Design 3. (n.d.). Material Design. https://m3.material.io/styles/icons/designing-icons
+- Human Interface Guidelines | Apple Developer Documentation. (n.d.). Apple Developer Documentation. https://developer.apple.com/design/human-interface-guidelines
 - Mental Health App. (n.d.). Figma. https://www.figma.com/community/file/1235247165160874508
 - Arrow Icons Pack (Community). (n.d.). Figma. https://www.figma.com/file/Qk3Mnc5r9GaukzcUUsEfTJ/Arrow-Icons-Pack-(Community)?type=design&t=PKaSF6TYUwnCzHbV-6
 - Home icon (Community). (n.d.). Figma. https://www.figma.com/file/YoiML8brCBxftK0fK8KWqh/home-icon-(Community)?type=design&t=PKaSF6TYUwnCzHbV-6
