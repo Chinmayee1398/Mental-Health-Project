@@ -1,6 +1,6 @@
 # Welcome to HappyFox 🦊 - A Mental Health Application Project
 
-HappyFox is a user-friendly mental health app developed as a project for the Master Course Fundamentals of UI&UX in SRH University Heidelberg.
+HappyFox is a user-friendly mental health app developed as a project for the Master Course Fundamentals of UI&UX in SRH University Heidelberg.  
 Our aim was to create an app that not only promotes emotional well-being and mental balance but also incorporates key principles of UI and UX design.
 
 ![Final Mockup](https://github.com/Andrewfragkiadakis/Mental-Health-Project/assets/62713718/3ea09523-e312-48e6-953d-0a3b85d13590)
