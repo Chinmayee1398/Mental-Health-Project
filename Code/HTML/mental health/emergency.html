@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+    div.container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    div.background {
+      width: 375px;
+      height: 812px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #FFCFCF;
+      border-radius: 40px;
+    }
+
+    div.emergency-button {
+      left: 28px;
+      top: 190px;
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 32px;
+      font-family: Comfortaa;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+
+    div.button-container {
+      width: 375px;
+      height: 60px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      left: 0px;
+      top: 748px;
+      position: absolute;
+      background: #FFCFCF;
+      box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.10);
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      gap: 71px;
+      display: inline-flex;
+    }
+
+    div.button-inner {
+      width: 22px;
+      height: 24px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.button-inner-inner {
+      width: 22px;
+      height: 24px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.button-dot {
+      width: 22px;
+      height: 24px;
+      background: #FFCFCF;
+      border: 0.75px black solid;
+    }
+
+    div.button-icon {
+      width: 24px;
+      height: 24px;
+      padding: 33.10px;
+      justify-content: center;
+      align-items: center;
+      gap: 33.10px;
+      display: flex;
+    }
+
+    div.button-line {
+      width: 18px;
+      height: 22px;
+      background: black;
+    }
+
+    div.button-shape {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.button-shape-inner {
+      width: 24px;
+      height: 24px;
+      padding-left: 3px;
+      padding-right: 3px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.button-shape-dot {
+      width: 18px;
+      height: 20px;
+      border: 0.75px black solid;
+    }
+
+    div.circle {
+      width: 40px;
+      height: 40px;
+      padding-left: 5.35px;
+      padding-right: 5.35px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      left: 167px;
+      top: 106px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.circle-inner {
+      width: 29.30px;
+      height: 30px;
+      background: black;
+    }
+
+    div.notification-bar {
+      width: 375px;
+      height: 45px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+    }
+
+    div.notification-bar-dot {
+      width: 24.33px;
+      height: 11.33px;
+      left: 336px;
+      top: 18.33px;
+      position: absolute;
+    }
+
+    div.notification-bar-dot-inner {
+      width: 22px;
+      height: 11.33px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      opacity: 0.35;
+      border-radius: 2.67px;
+      border: 0.50px black solid;
+    }
+
+    div.notification-bar-dot-line {
+      width: 1.33px;
+      height: 4px;
+      left: 23px;
+      top: 3.67px;
+      position: absolute;
+      opacity: 0.40;
+      background: black;
+    }
+
+    div.notification-bar-dot-shape {
+      width: 18px;
+      height: 7.33px;
+      left: 2px;
+      top: 2px;
+      position: absolute;
+      background: black;
+      border-radius: 1.33px;
+    }
+
+    div.notification-bar-time {
+      width: 54px;
+      height: 18px;
+      padding-bottom: 1px;
+      left: 21px;
+      top: 16px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.notification-bar-time-inner {
+      width: 54px;
+      text-align: center;
+      color: black;
+      font-size: 15px;
+      font-family: Comfortaa;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    div.notification-bar-battery {
+      width: 375px;
+      height: 45px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+    }
+
+    div.notification-bar-battery-icon {
+      width: 20px;
+      height: 20px;
+      left: 355px;
+      top: 54px;
+      position: absolute;
+      background: #C4C4C4;
+    }
+
+    div.chat-container {
+      width: 252.35px;
+      height: 49px;
+      left: 61px;
+      top: 489px;
+      position: absolute;
+    }
+
+    div.chat-container-inner {
+      width: 252.35px;
+      height: 49px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    div.chat-icon {
+      width: 30px;
+      height: 30px;
+      left: 16px;
+      top: 9px;
+      position: absolute;
+    }
+
+    div.chat-text {
+      width: 190px;
+      height: 26px;
+      left: 46px;
+      top: 11px;
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 26px;
+      font-family: Comfortaa;
+      font-weight: 700;
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+
+    div.call-container {
+      width: 252.35px;
+      height: 49px;
+      left: 61px;
+      top: 381px;
+      position: absolute;
+    }
+
+    div.call-container-inner {
+      width: 252.35px;
+      height: 49px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #E00000;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    div.call-text {
+      width: 190px;
+      height: 26px;
+      left: 31px;
+      top: 11px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 26px;
+      font-family: Comfortaa;
+      font-weight: 700;
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+
+    div.call-icon {
+      width: 30px;
+      height: 30px;
+      padding: 3.75px;
+      left: 31px;
+      top: 9px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.call-icon-inner {
+      width: 22.50px;
+      height: 22.50px;
+      border: 0.75px white solid;
+    }
+
+    div.network-bar {
+      width: 131.94px;
+      height: 26.34px;
+      left: 122px;
+      top: 0px;
+      position: absolute;
+    }
+
+    div.network-bar-inner {
+      width: 126px;
+      height: 26.18px;
+      left: 3px;
+      top: 0.16px;
+      position: absolute;
+      background: #191919;
+    }
+
+    div.network-bar-dot {
+      width: 11.74px;
+      height: 11.74px;
+      left: 18.24px;
+      top: 5px;
+      position: absolute;
+      background: #313131;
+      border-radius: 9999px;
+    }
+
+    div.network-bar-line {
+      width: 49.17px;
+      height: 5.14px;
+      left: 40.71px;
+      top: 8px;
+      position: absolute;
+      background: #313131;
+      border-radius: 2.13px;
+    }
+
+    div.network-bar-dot img {
+      width: 3px;
+      height: 2.94px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+    }
+
+    div.network-bar-dot img.rotated {
+      width: 2.94px;
+      height: 2.93px;
+      left: 131.94px;
+      top: 0px;
+      position: absolute;
+      transform: rotate(180deg);
+      transform-origin: 0 0;
+    }
+
+    div.menu-button {
+      width: 47px;
+      height: 47px;
+      padding-left: 17.62px;
+      padding-right: 13.71px;
+      left: 21px;
+      top: 44px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    div.menu-button-inner {
+      width: 15.67px;
+      height: 11.75px;
+      border: 0.50px #151515 solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="background"></div>
+    <div class="emergency-button">Emergency button <br/>triggered!</div>
+    <div class="button-container">
+      
+      
+      
+    </div>
+    <div class="circle">
+      <div class="circle-inner"></div>
+    </div>
+    <div class="notification-bar">
+      <div class="notification-bar-dot">
+        <div class="notification-bar-dot-inner"></div>
+        <div class="notification-bar-dot-line"></div>
+        <div class="notification-bar-dot-shape"></div>
+      </div>
+      
+      <div class="notification-bar-time">
+        <div class="notification-bar-time-inner">9:41</div>
+      </div>
+     
+    </div>
+    <div class="chat-container">
+      <div class="chat-container-inner">
+        
+        <div class="chat-text">Chat with us</div>
+      </div>
+    </div>
+    <div class="call-container">
+      <div class="call-container-inner">
+       
+        <div class="call-text">Call 911</div>
+      </div>
+    </div>
+    <div class="network-bar">
+      <div class="network-bar-inner"></div>
+      <div class="network-bar-dot"></div>
+      <div class="network-bar-line"></div>
+     
+      
+    </div>
+    
+  </div>
+</body>
+</html>

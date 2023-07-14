@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>App Interface</title>
+
+    <style>
+
+      .field-container.active .field-text {
+
+        display: none;
+
+      }
+
+
+
+
+      .field-container.active input {
+
+        display: block;
+
+      }
+
+      .header img {
+
+        width: 20px;
+
+        height: 20px;
+
+      }
+
+
+
+
+      .email-enter .field-icon img {
+
+        width: 20px;
+
+        height: 20px;
+
+      }
+
+
+
+
+      .field-container input {
+
+        display: none;
+
+        border: none;
+
+        outline: none;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: transparent;
+
+        color: #000;
+
+        font-size: 16px;
+
+        padding: 10px;
+
+      }
+
+      body {
+       display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+
+      }
+
+
+
+
+      .container {
+
+        width: 375px;
+
+        height: 812px;
+
+        position: relative;
+
+        background: #fffdf5;
+
+        border-radius: 40px;
+
+        overflow: hidden;
+
+      }
+
+
+
+
+      .app-version {
+
+        width: 238px;
+
+        left: 68px;
+
+        top: 723px;
+
+        position: absolute;
+
+        text-align: center;
+
+        color: #353a48;
+
+        font-size: 10px;
+
+        font-family: Comfortaa;
+
+        font-weight: 500;
+
+        line-height: 20px;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .terms {
+
+        width: 238px;
+
+        left: 68px;
+
+        top: 692px;
+
+        position: absolute;
+
+        text-align: center;
+
+        color: #353a48;
+
+        font-size: 12px;
+
+        font-family: Comfortaa;
+
+        font-weight: 500;
+
+        line-height: 20px;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .title {
+
+        width: 301px;
+
+        height: 68px;
+
+        left: 37px;
+
+        top: 136px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .title-text {
+
+        width: 301px;
+
+        height: 68px;
+
+        text-align: center;
+
+        color: #a7ccd4;
+
+        font-size: 50px;
+
+        font-family: Comfortaa;
+
+        font-weight: 600;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .header {
+
+        width: 375px;
+
+        height: 45px;
+
+        left: -6px;
+
+        top: 0px;
+
+        position: absolute;
+
+      }
+
+
+
+
+      .status-bar {
+
+        width: 24.33px;
+
+        height: 11.33px;
+
+        left: 336px;
+
+        top: 18.33px;
+
+        position: absolute;
+
+      }
+
+
+
+
+      .status-bar:before {
+
+        content: "";
+
+        width: 22px;
+
+        height: 11.33px;
+
+        left: 0px;
+
+        top: 0px;
+
+        position: absolute;
+
+        opacity: 0.35;
+
+        border-radius: 2.67px;
+
+        border: 0.5px black solid;
+
+      }
+
+
+
+
+      .status-bar:after {
+
+        content: "";
+
+        width: 1.33px;
+
+        height: 4px;
+
+        left: 23px;
+
+        top: 3.67px;
+
+        position: absolute;
+
+        opacity: 0.4;
+
+        background: black;
+
+      }
+
+
+
+
+      .status-bar .battery {
+
+        width: 18px;
+
+        height: 7.33px;
+
+        left: 2px;
+
+        top: 2px;
+
+        position: absolute;
+
+        background: black;
+
+        border-radius: 1.33px;
+
+      }
+
+
+
+
+      .clock {
+
+        width: 54px;
+
+        height: 18px;
+
+        padding-bottom: 1px;
+
+        left: 21px;
+
+        top: 16px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .clock-text {
+
+        width: 54px;
+
+        text-align: center;
+
+        color: black;
+
+        font-size: 15px;
+
+        font-family: Comfortaa;
+
+        font-weight: 600;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .notification {
+
+        width: 20px;
+
+        height: 20px;
+
+        left: 355px;
+
+        top: 54px;
+
+        position: absolute;
+
+        background: #c4c4c4;
+
+      }
+
+
+
+
+      .menu {
+
+        width: 131.94px;
+
+        height: 26.34px;
+
+        left: 122px;
+
+        top: 0px;
+
+        position: absolute;
+
+      }
+
+
+
+
+      .menu-bar {
+
+        width: 126px;
+
+        height: 26.18px;
+
+        left: 3px;
+
+        top: 0.16px;
+
+        position: absolute;
+
+        background: #191919;
+
+      }
+
+
+
+
+      .menu-bar .circle {
+
+        width: 11.74px;
+
+        height: 11.74px;
+
+        left: 18.24px;
+
+        top: 5px;
+
+        position: absolute;
+
+        background: #313131;
+
+        border-radius: 9999px;
+
+      }
+
+
+
+
+      .menu-bar .rectangle {
+
+        width: 49.17px;
+
+        height: 5.14px;
+
+        left: 40.71px;
+
+        top: 8px;
+
+        position: absolute;
+
+        background: #313131;
+
+        border-radius: 2.13px;
+
+      }
+
+
+
+
+      .menu-bar:before {
+
+        content: "";
+
+        width: 3px;
+
+        height: 2.94px;
+
+        left: 0px;
+
+        top: 0px;
+
+        position: absolute;
+
+      }
+
+
+
+
+      .menu-bar:after {
+
+        content: "";
+
+        width: 2.94px;
+
+        height: 2.93px;
+
+        left: 131.94px;
+
+        top: 0px;
+
+        position: absolute;
+
+        transform: rotate(180deg);
+
+        transform-origin: 0 0;
+
+      }
+
+
+
+
+      .back-button {
+
+        width: 47px;
+
+        height: 47px;
+
+        padding-left: 17.62px;
+
+        padding-right: 13.71px;
+
+        left: 21px;
+
+        top: 44px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .back-button .line {
+
+        width: 15.67px;
+
+        height: 11.75px;
+
+        border: 0.5px #151515 solid;
+
+      }
+
+
+
+
+      
+
+
+      .password-reenter {
+
+        width: 313px;
+
+        height: 52px;
+
+        left: 30px;
+
+        top: 493px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .password-reenter .field-container {
+
+        width: 313px;
+
+        height: 52px;
+
+        position: relative;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: flex-start;
+
+        display: flex;
+
+      }
+
+
+
+
+      .password-reenter .field-container .field-bg {
+
+        width: 313px;
+
+        height: 52px;
+
+        left: 0px;
+
+        top: 0px;
+
+        position: absolute;
+
+        background: rgba(167, 204, 212, 0.3);
+
+        border-radius: 20px;
+
+      }
+
+
+
+
+      .password-reenter .field-container .field-text {
+
+        width: 211px;
+
+        left: 26px;
+
+        top: 16px;
+
+        position: absolute;
+
+        color: black;
+
+        font-size: 16px;
+
+        font-family: Comfortaa;
+
+        font-weight: 700;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .field-indicator {
+
+        height: 24px;
+
+        padding-left: 2.83px;
+
+        padding-right: 2.83px;
+
+        padding-top: 2px;
+
+        padding-bottom: 2px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .field-indicator .indicator-line {
+
+        /* image: url("https://cdn-icons-png.flaticon.com/128/2889/2889676.png"); */
+
+        background-size: 20px;
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+      }
+
+
+
+
+      .field-indicator .indicator-line + .indicator-line {
+
+        margin-top: 2px;
+
+      }
+
+
+
+
+      .password-enter {
+
+        width: 313px;
+
+        height: 52px;
+
+        left: 30px;
+
+        top: 396px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .password-enter .field-container {
+
+        width: 313px;
+
+        height: 52px;
+
+        position: relative;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: flex-start;
+
+        display: flex;
+
+      }
+
+
+
+
+      .password-enter .field-container .field-bg {
+
+        width: 313px;
+
+        height: 52px;
+
+        left: 0px;
+
+        top: 0px;
+
+        position: absolute;
+
+        background: rgba(167, 204, 212, 0.3);
+
+        border-radius: 20px;
+
+      }
+
+
+
+
+      .password-enter .field-container .field-text {
+
+        width: 211px;
+
+        left: 26px;
+
+        top: 16px;
+
+        position: absolute;
+
+        color: black;
+
+        font-size: 16px;
+
+        font-family: Comfortaa;
+
+        font-weight: 700;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .email-enter {
+
+        width: 313px;
+
+        height: 52px;
+
+        left: 30px;
+
+        top: 299px;
+
+        position: absolute;
+
+        justify-content: center;
+
+        align-items: center;
+
+        display: flex;
+
+      }
+
+
+
+
+      .email-enter .field-container {
+
+        width: 313px;
+
+        height: 52px;
+
+        position: relative;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: flex-start;
+
+        display: flex;
+
+      }
+
+
+
+
+      .email-enter .field-container .field-bg {
+
+        width: 313px;
+
+        height: 52px;
+
+        background: rgba(167, 204, 212, 0.3);
+
+        border-radius: 20px;
+
+      }
+
+
+
+
+      .email-enter .field-container .field-icon {
+
+        width: 25.45px;
+
+        height: 27px;
+
+        position: relative;
+
+      }
+
+
+
+
+      .email-enter .field-container .field-icon .icon-top {
+
+        width: 19.09px;
+
+        height: 15.75px;
+
+        left: 3.18px;
+
+        top: 5.62px;
+
+        position: absolute;
+
+        border: 0.75px #353a48 solid;
+
+      }
+
+
+
+
+      .email-enter .field-container .field-icon .icon-bottom {
+
+        width: 19.09px;
+
+        height: 15.75;
+
+        left: 3.18px;
+
+        top: 7.65px;
+
+        position: absolute;
+
+        border: 0.75px #353a48 solid;
+
+      }
+
+
+
+
+      .email-enter .field-container .field-text {
+
+        width: 170.15px;
+
+        color: black;
+
+        font-size: 16px;
+
+        font-family: Comfortaa;
+
+        font-weight: 700;
+
+        word-wrap: break-word;
+
+      }
+
+
+
+
+      .divider {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin-top: 799px;
+
+      }
+
+
+
+
+      .divider .line {
+
+        width: 134px;
+
+        height: 4px;
+
+        background: black;
+
+        border-radius: 100px;
+
+      }
+      .forgot-password {
+      left: 123px;
+      top: 586px;
+      position: absolute;
+      color: #191919;
+      font-size: 14px;
+      font-family: Comfortaa;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .login-button {
+      width: 295px;
+      height: 48px;
+      left: 40px;
+      top: 501px;
+      position: absolute;
+    }
+    
+    .login-button > div:first-child {
+      width: 295px;
+      height: 48px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #353A48;
+      border-radius: 5px;
+    }
+    
+    .login-button > div:last-child {
+      width: 148px;
+      left: 74px;
+      top: 16px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-family: Comfortaa;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="app-version">App Version 1.0.0</div>
+
+     
+
+      <div class="title">
+
+        <div class="title-text">Welcome Back!</div>
+
+      </div>
+
+      <div class="header">
+
+        <div class="status-bar">
+
+          <div class="battery">
+
+            <div class="battery-inner"></div>
+
+          </div>
+
+        </div>
+
+
+
+
+        <div class="clock">
+
+          <div class="clock-text">9:41</div>
+
+        </div>
+
+      </div>
+
+      <div class="menu">
+
+        <div class="menu-bar">
+
+          <div class="circle"></div>
+
+          <div class="rectangle"></div>
+
+        </div>
+
+      </div>
+
+      <div class="back-button">
+
+        <img
+
+          src="https://cdn-icons-png.flaticon.com/128/8979/8979605.png"
+
+          alt="Back Button Icon"
+
+          width="20"
+
+          height="20"
+
+        />
+
+      </div>
+
+    
+      <div class="login-button">
+        <div></div>
+        <div>Login</div>
+      </div>
+      <div class="forgot-password">Forgot Password?</div>
+      <div class="password-reenter field-container">
+
+        <div class="field-bg"></div>
+
+        
+        <div class="field-indicator">
+
+          <div class="indicator-line"></div>
+
+          <div class="indicator-line"></div>
+
+        </div>
+
+      </div>
+
+      <div class="password-enter field-container">
+
+        <div class="field-bg"></div>
+
+        <div class="field-text" onclick="activateField(this)">
+
+          Enter your password
+
+        </div>
+
+        <input
+
+          type="password"
+
+          name="password-enter-input"
+
+          class="password-enter-input"
+
+          placeholder="Enter your password"
+
+        />
+
+        <div class="field-indicator">
+
+          <div class="indicator-line"></div>
+
+          <div class="indicator-line"></div>
+
+        </div>
+
+      </div>
+
+      <div class="email-enter field-container">
+
+        <div class="field-bg"></div>
+
+        <div class="field-icon">
+
+          <img
+
+            src="https://cdn-icons-png.flaticon.com/128/546/546394.png"
+
+            alt="Email Icon"
+
+          />
+
+        </div>
+
+        <div class="field-text" onclick="activateField(this)">
+
+          Enter your email
+
+        </div>
+
+        <input
+
+          type="email"
+
+          name="email-enter-input"
+
+          class="email-enter-input"
+
+          placeholder="Enter your email"
+
+        />
+
+      </div>
+
+      <div class="divider">
+
+        <div class="line"></div>
+
+      </div>
+
+    </div>
+
+
+
+
+    <script>
+
+      function activateField(element) {
+
+        element.parentNode.classList.add("active");
+
+        element.parentNode.querySelector("input").focus();
+
+      }
+
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design</title>
+  <style>
+        body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: #7EC8FF;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .circle-1 {
+      width: 300px;
+      height: 300px;
+      left: 34px;
+      top: 53px;
+      position: absolute;
+      background: #7EBDEC;
+    }
+
+    .circle-2 {
+      width: 100px;
+      height: 100px;
+      left: 134px;
+      top: 153px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 9999px;
+    }
+
+    .inhale-text {
+      width: 72px;
+      left: 148px;
+      top: 183px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .inhale-subtext {
+      color: white;
+      font-size: 14px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-1 {
+      width: 70px;
+      height: 70px;
+      left: 15px;
+      top: 393px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 10px;
+    }
+
+    .timer-1-text {
+      left: 26px;
+      top: 399px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-3,
+    .timer-4,
+    .timer-5 {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      background: #7EBDEC;
+      border-radius: 10px;
+    }
+
+    .timer-3 {
+      left: 108px;
+      top: 393px;
+    }
+
+    .timer-4 {
+      left: 199px;
+      top: 393px;
+    }
+
+    .timer-5 {
+      left: 290px;
+      top: 393px;
+    }
+
+    .timer-label {
+      width: 121px;
+      height: 16px;
+      left: 133px;
+      top: 365px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-3-text,
+    .timer-4-text,
+    .timer-5-text {
+      left: 126px;
+      top: 399px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .start-button {
+      width: 318px;
+      height: 58px;
+      left: 29px;
+      top: 715px;
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .progress-bar {
+      width: 134px;
+      height: 4px;
+      left: 117px;
+      top: 808px;
+      position: absolute;
+      background: black;
+      border-radius: 100px;
+    }
+
+    .start-button-text {
+      width: 110px;
+      height: 29px;
+      left: 133px;
+      top: 729px;
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .progress-bar-background {
+      width: 318px;
+      height: 12px;
+      left: 32px;
+      top: 688px;
+      position: absolute;
+      background: #D9D9D9;
+      border-radius: 10px;
+    }
+
+    .progress-bar-fill {
+      width: 18px;
+      height: 12px;
+      left: 30px;
+      top: 688px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 10px;
+    }
+
+    .dot {
+      width: 47px;
+      height: 47px;
+      padding-left: 17.62px;
+      padding-right: 13.71px;
+      left: 15px;
+      top: 29px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    .dot-line {
+      width: 15.67px;
+      height: 11.75px;
+      border: 0.50px white solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="inhale-text">
+      <span class="inhale-main-text">Inhale</span><br/>
+      <span class="inhale-subtext">Nose</span>
+    </div>
+    
+    
+    <div class="start-button"></div>
+    <div class="progress-bar"></div>
+
+    <a href="BReathee.html">
+        <div class="start-button-text">Pause</div>
+        </a>
+ 
+    <div class="progress-bar-background"></div>
+    <div class="progress-bar-fill"></div>
+    
+  </div>
+</body>
+</html>

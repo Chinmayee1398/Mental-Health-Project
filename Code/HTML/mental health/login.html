@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happyfox</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+
+    div.container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: rgba(255, 253, 245, 1);
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    div.container div.shape {
+      width: 131.94px;
+      height: 26.34px;
+      left: 122px;
+      top: 0px;
+      position: absolute;
+    }
+
+    div.container div.shape > div.rectangle {
+      width: 126px;
+      height: 26.18px;
+      left: 3px;
+      top: 0.16px;
+      position: absolute;
+      background: #191919;
+    }
+
+    div.container div.shape > div.circle1 {
+      width: 11.74px;
+      height: 11.74px;
+      left: 18.24px;
+      top: 5px;
+      position: absolute;
+      background: #313131;
+      border-radius: 9999px;
+    }
+
+    div.container div.shape > div.rectangle2 {
+      width: 49.17px;
+      height: 5.14px;
+      left: 40.71px;
+      top: 8px;
+      position: absolute;
+      background: #313131;
+      border-radius: 2.13px;
+    }
+
+    div.container div.shape > img.image1,
+    div.container div.shape > img.image2 {
+      width: 3px;
+      height: 2.94px;
+      position: absolute;
+    }
+
+    div.container div.shape > img.image1 {
+      top: 0px;
+      left: 0px;
+    }
+
+    div.container div.shape > img.image2 {
+      top: 0px;
+      left: 131.94px;
+      transform: rotate(180deg);
+      transform-origin: 0 0;
+    }
+
+    div.container div.home {
+      height: 23px;
+      padding-top: 12px;
+      padding-bottom: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    div.container div.home > div.home-indicator {
+      width: 134px;
+      height: 4px;
+      background: black;
+      border-radius: 100px;
+    }
+
+    .content {
+      color: #353A48;
+      font-family: Comfortaa, sans-serif;
+    }
+
+    .header {
+      width: 100%;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 200px;
+    }
+
+    .message {
+      width: 265px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .content .image-container {
+      width: 150px;
+      height: 175px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content img {
+      max-width: 50%;
+      max-height: 50%;
+      object-fit: contain;
+      position: relative;
+      left: 100px;
+      top: 100px;
+    }
+
+    .buttons {
+      width: 297px;
+      height: 48px;
+      position: absolute;
+      left: 39px;
+      bottom: 50px;
+      display: flex;
+    }
+
+    .button {
+      width: 147px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #353A48;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .button:first-child {
+      margin-right: 1px;
+    }
+
+    .button:last-child {
+      background: rgba(0, 0, 0, 0.05);
+      color: #353A48;
+      border: 0.5px #353A48 solid;
+    }
+
+    .version {
+      width: 238px;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content image-container">
+      <img src="C:\Users\Akshatha\Desktop\mentalhealthpics\fox.png" />
+    </div>
+    <div class="header">Welcome to Happyfox!</div>
+    <div class="content message">
+      I am Foxy! Here to support you on your journey towards better mental health and emotional balance.
+    </div>
+    <div class="buttons">
+      <div class="button">I have an account</div>
+      <div class="button">I’m new here</div>
+    </div>
+    <div class="content version">App Version 1.0.0</div>
+    <div class="shape">
+      <div class="rectangle"></div>
+      <div class="circle1"></div>
+      <div class="rectangle2"></div>
+      <img class="image1" src="https://via.placeholder.com/3x3" />
+      <img class="image2" src="https://via.placeholder.com/3x3" />
+    </div>
+    <div class="content" style="text-align: center; margin-top: 10px;">&copy; 2023 Happyfox. All rights reserved.</div>
+    <div class="home">
+      <div class="home-indicator"></div>
+    </div>
+  </div>
+</body>
+</html>
