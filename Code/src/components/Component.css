@@ -1,0 +1,112 @@
+.container {
+    width: 375px;
+    height: 812px;
+    position: relative;
+    background: #9DB391;
+    border-radius: 40px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 378px;
+    height: 260px;
+    left: -1px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  .shape {
+    width: 61px;
+    height: 61px;
+    padding-left: 9.53px;
+    padding-right: 9.53px;
+    left: 160px;
+    top: 537px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shape-inner {
+    width: 15.25px;
+    height: 41.94px;
+    position: relative;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+  }
+  
+  .shape-line {
+    width: 40.67px;
+    height: 0px;
+    left: -1.27px;
+    top: 7.62px;
+    position: absolute;
+    transform: rotate(-180deg);
+    transform-origin: 0 0;
+    border: 1.04px white solid;
+  }
+  
+  .shape-box {
+    width: 15.25px;
+    height: 40.67px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+  }
+  
+  .shape-box-inner {
+    width: 39.40px;
+    height: 0px;
+    left: -1.27px;
+    top: 7.63px;
+    position: absolute;
+    transform: rotate(-180deg);
+    transform-origin: 0 0;
+    border: 1.04px white solid;
+  }
+  
+  .shape-box-inner:after {
+    content: '';
+    width: 15.25px;
+    height: 7.62px;
+    left: -7.62px;
+    top: 15.25px;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    border: 1.04px white solid;
+  }
+  
+  .content {
+    width: 323px;
+    height: 137px;
+    left: 26px;
+    top: 303px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-wrapper {
+    width: 323px;
+    height: 137px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .content-text {
+    width: 323px;
+    height: 137px;
+    text-align: center;
+    color: white;
+    font-size: 64px;
+    font-family: Comfortaa;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  

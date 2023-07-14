@@ -1,0 +1,38 @@
+.container {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  background: #dfdcd0;
+  border-radius: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  padding-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.account-button,
+.new-button {
+  width: 147px;
+  height: 48px;
+  background: #353A48;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  font-family: Comfortaa;
+  font-weight: 600;
+  word-wrap: break-word;
+  text-align: center;
+  cursor: pointer;
+}
