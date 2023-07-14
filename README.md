@@ -50,6 +50,7 @@ These technologies and software tools collectively contributed to the successful
 - Arrow Icons Pack (Community). (n.d.). Figma. https://www.figma.com/file/Qk3Mnc5r9GaukzcUUsEfTJ/Arrow-Icons-Pack-(Community)?type=design&t=PKaSF6TYUwnCzHbV-6
 - Home icon (Community). (n.d.). Figma. https://www.figma.com/file/YoiML8brCBxftK0fK8KWqh/home-icon-(Community)?type=design&t=PKaSF6TYUwnCzHbV-6
 - 90 App Icons for iOS (Community). (n.d.). Figma. https://www.figma.com/file/XAp6BM6sgZ97thxfflgASD/90-App-Icons-for-iOS-or-whatever--_--(Community)?type=design&t=PKaSF6TYUwnCzHbV-6
+- Full screen smartphone mockup design Free PSD. (2018, December 14). Freepik. https://www.freepik.com/free-psd/full-screen-smartphone-mockup-design_3576506.htm#query=perspective%20iphone%20mockup&position=4&from_view=search&track=ais%22
 
 
 ## Contributors
