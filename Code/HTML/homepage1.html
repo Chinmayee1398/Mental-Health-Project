@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happyfox</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: rgba(255, 253, 245, 1);
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .container .shape {
+      width: 131.94px;
+      height: 26.34px;
+      left: 122px;
+      top: 0px;
+      position: absolute;
+    }
+
+    .container .shape .rectangle {
+      width: 126px;
+      height: 26.18px;
+      left: 3px;
+      top: 0.16px;
+      position: absolute;
+      background: #191919;
+    }
+
+    .container .shape .rectangle2 {
+      width: 49.17px;
+      height: 5.14px;
+      left: 40.71px;
+      top: 8px;
+      position: absolute;
+      background: #313131;
+      border-radius: 2.13px;
+    }
+
+    .container .home {
+      height: 23px;
+      padding-top: 12px;
+      padding-bottom: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .container .home .home-indicator {
+      width: 134px;
+      height: 4px;
+      background: black;
+      border-radius: 100px;
+    }
+    
+    .status-bar {
+      width: 24.33px;
+      height: 11.33px;
+      left: 336px;
+      top: 18.33px;
+      position: absolute;
+    }
+
+    .status-bar:before {
+      content: "";
+      width: 22px;
+      height: 11.33px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      opacity: 0.35;
+      border-radius: 2.67px;
+      border: 0.5px black solid;
+    }
+
+    .status-bar:after {
+      content: "";
+      width: 1.33px;
+      height: 4px;
+      left: 23px;
+      top: 3.67px;
+      position: absolute;
+      opacity: 0.4;
+      background: black;
+    }
+
+    .status-bar .battery {
+      width: 18px;
+      height: 7.33px;
+      left: 2px;
+      top: 2px;
+      position: absolute;
+      background: black;
+      border-radius: 1.33px;
+    }
+
+    .clock {
+      width: 54px;
+      height: 18px;
+      padding-bottom: 1px;
+      left: 21px;
+      top: 16px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .clock-text {
+      width: 54px;
+      text-align: center;
+      color: black;
+      font-size: 15px;
+      font-family: Comfortaa;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .notification {
+      width: 58px;
+      height: 58px;
+      left: 301px;
+      top: 667px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    .notification-circle {
+      width: 58px;
+      height: 58px;
+      position: relative;
+    }
+
+    .notification-circle-inner {
+      width: 58px;
+      height: 58px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #FFCFCF;
+      box-shadow: 0px 4px 11px rgba(246, 207, 173, 0.66);
+      border-radius: 9999px;
+    }
+
+    .notification-icon {
+      left: 13px;
+      top: 13px;
+      position: absolute;
+      color: #FFCFCF;
+      font-size: 31.49px;
+      font-family: Comfortaa;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+    
+    .greeting {
+      width: 235px;
+      left: 23px;
+      top: 119px;
+      position: absolute;
+    }
+    
+    .greeting-text {
+      color: #371B34;
+      font-size: 26px;
+      font-family: Comfortaa;
+      font-weight: 500;
+      line-height: 32px;
+      word-wrap: break-word;
+    }
+    
+    .greeting-name {
+      color: #371B34;
+      font-size: 26px;
+      font-family: Epilogue;
+      font-weight: 600;
+      line-height: 32px;
+      word-wrap: break-word;
+      text-decoration: underline;
+    }
+    
+    .greeting-underline {
+      color: #371B34;
+      font-size: 26px;
+      font-family: Comfortaa;
+      font-weight: 700;
+      line-height: 32px;
+      word-wrap: break-word;
+    }
+    
+    .question {
+      left: 10px;
+      top: 211px;
+      position: absolute;
+      color: #371B34;
+      font-size: 16px;
+      font-family: Comfortaa;
+      font-weight: 500;
+      word-wrap: break-word;
+    }
+    
+    .content .image-container {
+      width: 150px;
+      height: 175px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      position: relative;
+      left: 10px;
+      top: 250px;
+    }
+
+    .content .image-container1 {
+      width: 150px;
+      height: 175px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 20px;
+    }
+
+    .journal {
+      width: 327px;
+      height: 62px;
+      left:20px;
+      top: 400px;
+      position: absolute;
+    }
+    
+    .journal-inner {
+      width: 155px;
+      height: 62px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #F4F3F1;
+      border-radius: 16px;
+    }
+    
+    .journal-text {
+      width: 58px;
+      left: 52px;
+      top: 15px;
+      position: absolute;
+      color: #573926;
+      font-size: 14px;
+      font-family: Comfortaa;
+      font-weight: 700;
+      line-height: 32px;
+      word-wrap: break-word;
+    }
+    
+    /* .journal-icon {
+      width: 22px;
+      height: 21.33px;
+      padding-left: 3.44px;
+      padding-right: 3.44px;
+      padding-top: 1.33px;
+      padding-bottom: 1.33px;
+      left: 15px;
+      top: 41px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+     */
+    /* .journal-icon-inner {
+      width: 15.12px;
+      height: 18.67px;
+      background: #D6CCC6;
+    } */
+    
+    .break {
+      width: 155px;
+      height: 62px;
+      left: 200px;
+      top: 400px;
+      position: absolute;
+    }
+    
+    .break-inner {
+      width: 155px;
+      height: 62px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #F4F3F1;
+      border-radius: 16px;
+    }
+    
+    .break-text {
+      left: 45px;
+      top: 21px;
+      position: absolute;
+      text-align: center;
+      color: #573926;
+      font-size: 14px;
+      font-family: Comfortaa;
+      font-weight: 700;
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+    
+    /* .break-icon {
+      width: 24px;
+      height: 24px;
+      padding: 2px;
+      left: 9px;
+      top: 19px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+    
+    .break-icon-inner {
+      width: 20px;
+      height: 20px;
+      background: #D6CCC6;
+    } */
+    
+    .quote {
+      width: 324px;
+      height: 113px;
+      left: 28px;
+      top: 500px;
+      position: absolute;
+    }
+    
+    .quote-inner {
+      width: 324px;
+      height: 113px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #F8F6F6;
+      border-radius: 16px;
+      border: 0.50px #F4F4F4 solid;
+    }
+    
+    
+    .quote-text {
+      width: 258px;
+      left: 14px;
+      top: 17px;
+      position: absolute;
+      color: #707070;
+      font-size: 14px;
+      font-family: Comfortaa;
+      font-weight: 400;
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+    
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="status-bar">
+        <div class="battery">
+          <div class="battery-inner"></div>
+        </div>
+      </div>
+      <div class="clock">
+        <div class="clock-text">9:41</div>
+        <div class="content image-container1">
+          <img src="C:\Users\Akshatha\Desktop\mentalhealthpics\smallfox.png" />
+        </div>
+      </div>
+    </div>
+    <div class="shape">
+      <div class="rectangle"></div>
+      <div class="circle1"></div>
+      <div class="rectangle2"></div>
+    </div>
+
+    <div class="greeting">
+      <div class="greeting-text">Good morning,</div>
+      <div class="greeting-name">John<span class="greeting-underline">!</span></div>
+    </div>
+    <div class="question">
+      How are you feeling today?
+    </div>
+    <div class="content image-container">
+      <img src="C:\Users\Akshatha\Desktop\mentalhealthpics\moods.png" />
+    </div>
+    <div class="journal">
+        <div class="journal-inner">
+          <div class="journal-text">Journal</div>
+          <div class="journal-icon">
+            <div class="journal-icon-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="break">
+        <div class="break-inner">
+          <div class="break-text">Have a break</div>
+          <div class="break-icon">
+            <div class="break-icon-inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="quote-inner">
+          <div class="quote-icon">
+            <div class="quote-icon-inner"></div>
+          </div>
+          <div class="quote-text">
+            "You don’t have to control your thoughts. You just have to stop letting them control you." <br />— Dan Millman
+          </div>
+        </div>
+      </div>
+    <div class="notification">
+      <div class="notification-circle">
+        <div class="notification-circle-inner"></div>
+        <a href="emergency.html">
+            <div class="notification-icon">❗️</div>
+            </a>
+   
+      </div>
+    </div>
+    <div class="home">
+      <div class="home-indicator"></div>
+    </div>
+  </div>
+</body>
+</html>

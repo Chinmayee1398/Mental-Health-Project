@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+       body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: #7EC8FF;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .circle-1 {
+      width: 33px;
+      height: 33px;
+      left: 15px;
+      top: 20px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    .circle-1-inner {
+      width: 33px;
+      height: 33px;
+      background: white;
+    }
+
+    .circle-2 {
+      width: 33px;
+      height: 33px;
+      left: 317px;
+      top: 20px;
+      position: absolute;
+      background: #7EC8FF;
+      border-radius: 9999px;
+      border: 1px white solid;
+    }
+
+    .circle-3 {
+      width: 17px;
+      height: 26px;
+      left: 325px;
+      top: 24px;
+      position: absolute;
+      background: white;
+    }
+
+    .rectangle-1 {
+      width: 300px;
+      height: 300px;
+      left: 34px;
+      top: 53px;
+      position: absolute;
+      background: #7EBDEC;
+    }
+
+    .circle-4 {
+      width: 100px;
+      height: 100px;
+      left: 134px;
+      top: 153px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 9999px;
+    }
+
+    .text-1 {
+      width: 72px;
+      height: 39px;
+      left: 148px;
+      top: 180px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .text-2 {
+      width: 375px;
+      height: 397px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #D9D9D9;
+      border-radius: 40px;
+    }
+
+    .text-3 {
+      width: 379px;
+      height: 530px;
+      left: 0px;
+      top: 282px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 40px;
+    }
+
+    .text-4 {
+      width: 271px;
+      height: 46px;
+      left: 52px;
+      top: 307px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 32px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .text-5 {
+      width: 109px;
+      height: 31px;
+      left: 28px;
+      top: 392px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 300;
+      word-wrap: break-word;
+    }
+
+    .text-6 {
+      width: 133px;
+      height: 31px;
+      left: 224px;
+      top: 392px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 300;
+      word-wrap: break-word;
+    }
+
+    .circle-5 {
+      width: 70px;
+      height: 70px;
+      left: 48px;
+      top: 438px;
+      position: absolute;
+    }
+
+    .circle-5-inner-1 {
+      width: 70px;
+      height: 70px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #7EC8FF;
+      border-radius: 9999px;
+    }
+
+    .circle-5-inner-2 {
+      width: 45px;
+      height: 45px;
+      left: 12px;
+      top: 12px;
+      position: absolute;
+      background: #7EBDEC;
+      border-radius: 9999px;
+    }
+
+    .circle-5-inner-3 {
+      width: 15px;
+      height: 15px;
+      left: 27px;
+      top: 27px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 9999px;
+    }
+
+    .circle-5-line-1 {
+      width: 24px;
+      height: 0px;
+      left: 46px;
+      top: 35px;
+      position: absolute;
+      border: 1.50px white solid;
+    }
+
+    .circle-5-line-2 {
+      width: 24px;
+      height: 0px;
+      left: 24px;
+      top: 35px;
+      position: absolute;
+      transform: rotate(180deg);
+      transform-origin: 0 0;
+      border: 1.50px white solid;
+    }
+
+    .circle-6 {
+      width: 70px;
+      height: 70px;
+      left: 256px;
+      top: 438px;
+      position: absolute;
+    }
+
+    .circle-6-inner-1 {
+      width: 70px;
+      height: 70px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      background: #7EC8FF;
+      border-radius: 9999px;
+    }
+
+    .circle-6-inner-2 {
+      width: 30px;
+      height: 30px;
+      left: 20px;
+      top: 20px;
+      position: absolute;
+      background: #D9D9D9;
+      border-radius: 9999px;
+    }
+
+    .circle-6-inner-3 {
+      width: 15px;
+      height: 15px;
+      left: 27px;
+      top: 27px;
+      position: absolute;
+      background: #3FADFF;
+      border-radius: 9999px;
+    }
+
+    .circle-6-line-1 {
+      width: 24px;
+      height: 0px;
+      left: 0px;
+      top: 35px;
+      position: absolute;
+      border: 1.50px white solid;
+    }
+
+    .circle-6-line-2 {
+      width: 24px;
+      height: 0px;
+      left: 70px;
+      top: 35px;
+      position: absolute;
+      transform: rotate(180deg);
+      transform-origin: 0 0;
+      border: 1.50px white solid;
+    }
+
+    .text-7 {
+      width: 88px;
+      height: 45px;
+      left: 38px;
+      top: 520px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .text-8 {
+      width: 88px;
+      height: 45px;
+      left: 247px;
+      top: 520px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .text-9 {
+      width: 328px;
+      height: 42px;
+      left: 23px;
+      top: 649px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .rectangle-2 {
+      width: 142px;
+      height: 58px;
+      left: 116px;
+      top: 713px;
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .text-10 {
+      width: 110px;
+      height: 29px;
+      left: 132px;
+      top: 727px;
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .line-1 {
+      width: 134px;
+      height: 4px;
+      left: 110px;
+      top: 807px;
+      position: absolute;
+      background: black;
+      border-radius: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="circle-1">
+      <div class="circle-1-inner"></div>
+    </div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="rectangle-1"></div>
+    <div class="circle-4"></div>
+    <div class="text-1">
+      <span style="color: white; font-size: 24px; font-family: Inter; font-weight: 400; word-wrap: break-word">Inhale<br></span>
+      <span style="color: white; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Nose</span>
+    </div>
+    <div class="text-2"></div>
+    <div class="text-3"></div>
+    <div class="text-4">Calm Breathing</div>
+    <div class="text-5">Inhale<br></div>
+    <div class="text-6">Exhale</div>
+    <div class="circle-5">
+      <div class="circle-5-inner-1"></div>
+      <div class="circle-5-inner-2"></div>
+      <div class="circle-5-inner-3"></div>
+      <div class="circle-5-line-1"></div>
+      <div class="circle-5-line-2"></div>
+    </div>
+    <div class="circle-6">
+      <div class="circle-6-inner-1"></div>
+      <div class="circle-6-inner-2"></div>
+      <div class="circle-6-inner-3"></div>
+      <div class="circle-6-line-1"></div>
+      <div class="circle-6-line-2"></div>
+    </div>
+    <div class="text-7">4 sec<br>Nose</div>
+    <div class="text-8">4 sec<br>Nose</div>
+    <div class="text-9">Don't push yourself too hard if you feel overexerted.</div>
+    <div class="rectangle-2"></div>
+
+    <a href="BReathee.html">
+      <div class="text-10">Okay</div>
+      </a>
+   
+    <div class="line-1"></div>
+  </div>
+</body>
+
+</html>

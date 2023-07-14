@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meditation Timer</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      width: 375px;
+      height: 812px;
+      position: relative;
+      background: #B6A3CC;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    .play-button {
+      width: 33px;
+      height: 33px;
+      left: 15px;
+      top: 20px;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+    }
+
+    .play-button-inner {
+      width: 33px;
+      height: 33px;
+      background: white;
+    }
+
+    .timer-circle {
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      border-radius: 10px;
+    }
+
+    .timer-circle:nth-child(2) {
+      background: #B878FF;
+      left: 15px;
+      top: 393px;
+    }
+
+    .timer-circle:nth-child(3) {
+      background: #D8B6FF;
+      left: 108px;
+      top: 393px;
+    }
+
+    .timer-circle:nth-child(4) {
+      background: #D8B6FF;
+      left: 199px;
+      top: 393px;
+    }
+
+    .timer-circle:nth-child(5) {
+      background: #D8B6FF;
+      left: 290px;
+      top: 393px;
+    }
+
+    .timer-text {
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-text:nth-child(3) {
+      left: 26px;
+      top: 399px;
+    }
+
+    .timer-text:nth-child(4) {
+      left: 126px;
+      top: 399px;
+    }
+
+    .timer-text:nth-child(5) {
+      left: 211px;
+      top: 399px;
+    }
+
+    .timer-text:nth-child(6) {
+      left: 301px;
+      top: 399px;
+    }
+
+    .length-text {
+      width: 121px;
+      height: 16px;
+      left: 133px;
+      top: 365px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-length {
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .timer-length:nth-child(8) {
+      left: 126px;
+      top: 399px;
+    }
+
+    .timer-length:nth-child(9) {
+      left: 211px;
+      top: 399px;
+    }
+
+    .timer-length:nth-child(10) {
+      left: 301px;
+      top: 399px;
+    }
+
+    .start-button {
+      width: 318px;
+      height: 58px;
+      left: 29px;
+      top: 715px;
+      position: absolute;
+      background: white;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+    }
+
+    .progress-bar {
+      width: 134px;
+      height: 4px;
+      left: 117px;
+      top: 808px;
+      position: absolute;
+      background: black;
+      border-radius: 100px;
+    }
+
+    .start-text {
+      width: 110px;
+      height: 29px;
+      left: 133px;
+      top: 729px;
+      position: absolute;
+      text-align: center;
+      color: black;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .title {
+      width: 254px;
+      height: 33px;
+      left: 61px;
+      top: 80px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+      font-family: Inter;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    .image {
+      width: 237px;
+      height: 217px;
+      left: 69px;
+      top: 131px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="play-button">
+      <div class="play-button-inner"></div>
+    </div>
+    <div class="timer-circle"></div>
+    <div class="timer-text">3<br>min</div>
+    <div class="timer-circle"></div>
+    <div class="timer-circle"></div>
+    <div class="timer-circle"></div>
+    <div class="length-text">Length</div>
+    <div class="timer-length">15<br>min</div>
+    <div class="timer-length">30<br>min</div>
+    <div class="timer-length">60<br>min</div>
+    <a href="med1.html" class="start-button"></a>
+    <div class="progress-bar"></div>
+    <div class="start-text">Start</div>
+    <div class="title">Meditation Timer</div>
+    <img class="image" src="C:\Users\Akshatha\Desktop\mentalhealthpics\meditate.png" />
+  </div>
+</body>
+</html>
